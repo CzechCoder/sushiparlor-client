@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #85c4d4;
+  --secondary-color: #de5a9a;
+  --tertiary-color: #f4fafd;
+}
+body {
+  background-color: var(--tertiary-color);
+}
+.bg-paleblue {
+  background-color: var(--primary-color);
+}
+.pink {
+  color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  height: 90px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  margin-bottom: 60px;
+  border-bottom: 4px solid white;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.sushi-top-left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+}
+.sushi-top-right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 200px;
+}
+
+/* Input left */
+
+.input-card {
+  max-width: 450px;
+}
+
+/* Catalog */
+
+.k-container {
+  padding: 0 0 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.k-container .card {
+  cursor: pointer;
+}
+.k-container .card:hover {
+  box-shadow: 0 8px 12px 0 rgba(255, 28, 221, 0.288)!important;
+}
+.p-info {
+  color: black;
+  padding: 5px 8px 10px 8px;
+}
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+span {
+  font-size: 13px;
+}
+.p-bottom {
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+.p-text {
+  height: 150px;
+}
+
+/* Modal */
+
+.close-it {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  color: white;
+}
+.closer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(25, 42, 50, 0.7);
+  z-index: 1;
+}
+.mod-topbar {
+  height: 38px;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+.modal-img {
+  width: 100%;
+  height: 100%;
+}
+.main-content {
+  margin: 24px auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  max-width: 1080px;
+  position: relative;
+  z-index: 999;
+}
+.basemodal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 42, 50, 0.7);
+  overflow-y: scroll;
+  z-index: 101;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+  .k-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .sushi-top-left, .sushi-top-right {
+    display: none;
+  }
+}
+ 
+@media (max-width: 550px) {
+  .k-container {
+    grid-template-columns: 1fr;
+  }
+}
